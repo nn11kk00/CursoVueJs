@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--vue cdn-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+
+  <title>Contador Nicolas Capdevielle</title>
+
+
+
+  <style>
+    main {
+      width: 600px;
+      border-radius: 50px;
+      margin: 5em auto;
+      padding: 5em 0;
+      text-align: center;
+      border: 3px solid black;
+    }
+
+    #app button {
+      background-color: black;
+      font-weight: bold;
+      border-radius: 5px;
+
+    }
+
+    #app button:nth-child(1) {
+      color: red;
+      font-size: 1.2em;
+      width: 1.7em;
+      height: 1.7em;
+    }
+
+    #app button:nth-child(3) {
+      color: green;
+      font-size: 1em;
+      width: 2em;
+      height: 2em;
+    }
+
+    hr {
+      margin: 1em auto;
+      width: 80%;
+      height: 1px;
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <button style="background-color: black;border-radius: 5px;border: 1px solid whitesmoke;padding: 1em;"><a href="../"
+        style="text-decoration: none;color:white;font-weight: bold;">Volver a
+        inicio</a></button>
+    <h1>Contador</h1>
+    <h2>1er entrega</h2>
+    <p>Nicolas Capdevielle</p>
+
+    <hr>
+
+    <div id="app">
+      <button @click="restar()">-</button>
+      <p>{{contador}}</p>
+      <button @click="sumar()">+</button>
+
+    </div>
+
+
+
+    <!--vue cdn-->
+    <script src="app.js"></script>
+  </main>
+</body>
+
+</html>

@@ -23,7 +23,7 @@ Vue.component('mi-componente-list', {
     costo: Number,
   },
   template: `
-  <tr class="row">
+  <tr  class="row">
   <td class="col-2 py-2 border"><img :src="portada" class=" img-fluid"></td>
     <td class="col-5 py-2 border">{{ titulo }}</td>
     <td class="col-5 py-2 border">U$S <em>{{ costo }}</em></td>
@@ -60,7 +60,12 @@ const app = new Vue({
         portada: "img/charger.jpg",
         costo: 16000,
       }
-    ]
+    ],
+    styleTable: {
+      color: 'white',
+      fontSize: '13px',
+      background: 'darkgrey',
+    },
   }
 
 
